@@ -1,0 +1,257 @@
+html {
+    box-sizing: border-box;
+    font-family:  Geneva, Verdana, sans-serif;
+}
+*, ::after, ::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    font-family: inherit;
+    padding-top: 40px;
+}
+
+section {
+    width: 100%;
+    padding: 50px;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+a {
+    color: #fff;
+    color: #da984b;
+}
+p {
+    margin-bottom: 20px;
+
+}
+img {
+    max-width: 80vw;
+}
+/* -------------- Header styles ---------*/
+#header {
+    height: 40px;
+    width: 100vw;
+    background-color: #222;
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+}
+#head, #wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+#head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+}
+#logo-link {
+    display: flexbox;
+    width: auto;
+}
+#header-img {
+    width: 25px;
+    margin-top: 5px;
+}
+#nav-bar {
+    padding-right: 10px;
+}
+.nav-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0 10px;
+}
+.nav-link:hover, a:hover {
+    color: #ff279c;
+    text-decoration: underline;
+}
+
+/* -------------- Section 1 styles ---------*/
+#hero {
+    background:  radial-gradient(
+        closest-corner circle at 50% 100%,
+        #5d0184,      
+        #000
+            );
+}
+
+h1 {
+    font-size: 3rem;
+    padding-top: 10px;
+}
+h2 {
+    font-size: 2rem;
+}
+.rainbow {
+    background: -webkit-radial-gradient(#be22ff 20%,#ff279c 50%,#ff981f 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+
+/* -------------- Section 2 styles ---------*/
+#about {
+    background:  radial-gradient(
+        closest-corner circle at 50% 0%,
+        #5d0184,
+        #000 
+        );
+}
+
+#m2-img {
+    clip-path: inset(19.4% 18.5% 19.4% 18.5%);
+    margin:  -18.5%;
+}
+/* -------------- Section 3 styles ---------*/
+#advantages {
+    background:  radial-gradient(
+        closest-corner circle at 50% 100%,
+        #ff279c,      
+        #000
+            );
+}
+
+#retina-img {
+    clip-path: inset(1px 2px 1px 1px round 19px);
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    gap: 50px;
+}
+/* -------------- Section 4 styles ---------*/
+#buy {
+     background:  radial-gradient(
+        closest-corner circle at 50% 0%,
+        #ff279c,      
+        #000
+            );
+}
+form {
+    border: 1px solid #ccc;
+    width: 70%;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    gap: 30px;
+    border: none;
+}
+label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    width: 70%;
+    padding: 7px 30px;
+    border-radius: 7px;
+    border: none;
+    align-self: flex-end;
+    min-width: 150px;
+    
+}
+input#submit {
+    width: 30%;
+    padding: 20px 30px;
+    font-weight: bold;
+    line-height: 0;
+    text-transform: uppercase;
+    align-self: center;
+    min-width: 150px;
+
+}
+input#submit:hover {
+    background: linear-gradient(45deg,#be22ff 20%,#ff279c 50%,#ff981f 80%);
+
+}
+
+.rights {
+    font-size: 0.8rem;
+    width: 70%;
+    color: #be22ff;
+}
+
+/* -------------- Footer styles ---------*/
+#footer {
+    width: 100%;
+    color: #ccc;
+    background-color: #222;
+    text-align: center;
+    font-size: small;
+    padding: 10px 20px;
+}
+
+#footer p {
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    section {
+        padding: 40px 20px 10px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    form {
+        width: 90vw;
+    }
+    iframe {
+        width: 426px;
+        height: 240px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    #nav-bar {
+        padding-right: 0;
+    }
+    .nav-link {
+        padding: 0 3px;
+    }
+    iframe {
+        width: 218px;
+        height: 120px;
+    }
+    label {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    input {
+        align-self: center;
+    }
+    h2 {
+        font-size: 1.25rem;
+    }
+}
